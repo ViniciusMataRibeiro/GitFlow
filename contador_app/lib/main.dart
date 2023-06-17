@@ -12,7 +12,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'App Contador',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: const ColorScheme.dark(
+          primary: Colors.red,
+          secondary: Colors.white,
+        ),
         useMaterial3: true,
       ),
       home: const MyHomePage(title: 'Pagina Inicial'),
@@ -56,9 +59,7 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
-            const Text(
-              'vezes'
-            ),
+            const Text('vezes'),
           ],
         ),
       ),
