@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      home: const MyHomePage(title: 'Pagina Inicial'),
+      home: const MyHomePage(title: 'Pagina Contador'),
     );
   }
 }
@@ -53,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'Você apertou o botão no total de:',
+              'Você clicou no botão no total de:',
             ),
             Text(
               '$_counter',
@@ -66,7 +66,7 @@ class _MyHomePageState extends State<MyHomePage> {
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Incrementar',
-        backgroundColor: Colors.green,
+        backgroundColor: Colors.pink,
         child: const Icon(
           Icons.add,
           color: Colors.white,
